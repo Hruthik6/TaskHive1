@@ -251,7 +251,7 @@ export default function AssessmentClient({ assessment, sessionId }: { assessment
       </div>
 
       {/* Question Card */}
-      <div className="card" style={{ position: "relative" }}>
+      <div key={q.id} className="card" style={{ position: "relative" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
           <span className="tag" style={{ background: "#e5d7c0", color: "#40504b" }}>
             Topic: {q.topic}
